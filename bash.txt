@@ -1,0 +1,418 @@
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~
+$ cd git
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ ls
+demo.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/avnish.abhishek/git/.git/
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.txt
+
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "commit"
+[master (root-commit) 920ae4e] commit
+ Committer: Abhishek <avnish.abhishek@accenture.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git config --global user.name abhishek-avnish
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git remote add origin https://github.com/abhishek-avnish/test_demo.git
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push origin master
+fatal: User cancelled dialog.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/abhishek-avnish/test_demo.git/'
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 35.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/abhishek-avnish/test_demo.git
+ * [new branch]      master -> master
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git remote add origin https://github.com/abhishek-avnish/test_demo.git
+error: remote origin already exists.
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ ls
+avnish.txt  demo.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push origin master
+Everything up-to-date
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/avnish.abhishek/git/.git/
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        avnish.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        avnish.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git add avnish.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ ls
+avnish.txt  demo.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push origin master
+Everything up-to-date
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "committed"
+[master a0d7ac5] committed
+ Committer: abhishek-avnish <avnish.abhishek@accenture.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 avnish.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git config --global user.name abhishek-avnish
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "committed"
+On branch master
+nothing to commit, working tree clean
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git add avnish.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "committed"
+On branch master
+nothing to commit, working tree clean
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "committed"
+On branch master
+nothing to commit, working tree clean
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 271 bytes | 67.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/abhishek-avnish/test_demo.git
+   920ae4e..a0d7ac5  master -> master
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   avnish.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git add avnish.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   avnish.txt
+
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "committed"
+[master 934ef37] committed
+ Committer: abhishek-avnish <avnish.abhishek@accenture.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 70.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/abhishek-avnish/test_demo.git
+   a0d7ac5..934ef37  master -> master
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git add hello.py
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "committed"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push origin master
+Everything up-to-date
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ ls
+Hello.py  avnish.txt  demo.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git add hello.py
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git add Hello.py
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "committed"
+[master 300e1a9] committed
+ Committer: abhishek-avnish <avnish.abhishek@accenture.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Hello.py
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 94.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/abhishek-avnish/test_demo.git
+   934ef37..300e1a9  master -> master
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ touch demo1.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ notepad demo1.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git add .
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   demo1.txt
+
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git commit -m "committed"
+[master 6a64999] committed
+ Committer: abhishek-avnish <avnish.abhishek@accenture.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo1.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git log
+commit 6a649995773d06742f5be5013585fab24e485f96 (HEAD -> master)
+Author: abhishek-avnish <avnish.abhishek@accenture.com>
+Date:   Wed Jul 26 15:40:55 2023 +0530
+
+    committed
+
+commit 300e1a90d3e26a33cac27f73936505bc21fc3c17 (origin/master)
+Author: abhishek-avnish <avnish.abhishek@accenture.com>
+Date:   Wed Jul 26 15:11:39 2023 +0530
+
+    committed
+
+commit 934ef3732d3f52b5596cc03d952c58e0f2d66102
+Author: abhishek-avnish <avnish.abhishek@accenture.com>
+Date:   Wed Jul 26 14:59:15 2023 +0530
+
+    committed
+
+commit a0d7ac52dda68f6723a57e1b677db709bd425d81
+Author: abhishek-avnish <avnish.abhishek@accenture.com>
+Date:   Wed Jul 26 14:56:10 2023 +0530
+
+    committed
+
+commit 920ae4e8d8879cccd4f8fa69d4f7f1771dabd022
+Author: Abhishek <avnish.abhishek@accenture.com>
+Date:   Wed Jul 26 14:01:54 2023 +0530
+
+    commit
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ ls
+Hello.py  avnish.txt  demo.txt  demo1.txt
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 272 bytes | 90.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/abhishek-avnish/test_demo.git
+   300e1a9..6a64999  master -> master
+branch 'master' set up to track 'origin/master'.
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ git remote -v
+origin  https://github.com/abhishek-avnish/test_demo.git (fetch)
+origin  https://github.com/abhishek-avnish/test_demo.git (push)
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$ ^C
+
+avnish.abhishek@KDC1-L-131C8GJ MINGW64 ~/git (master)
+$
